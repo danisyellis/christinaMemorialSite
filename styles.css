@@ -1,0 +1,160 @@
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
+
+#headerPic {
+	width:99%;
+	padding-left: 10px;
+}
+
+/*this is here to make the background image opaque*/
+body:before {
+    	content: ' ';
+/*    display: block;
+*/    min-height: 100%;
+  		min-width: 1024px;
+    	position: fixed;
+    	left: 0;
+    	top: 0;
+    	width: 100%;
+    	height: auto;
+    	z-index: -2;
+    	background-image: url('silverGlitter.jpeg');
+			opacity: 0.45;
+    	background-repeat: no-repeat;
+    	background-position: 50% 0;
+    	-ms-background-size: cover;
+    	-o-background-size: cover;
+    	-moz-background-size: cover;
+    	-webkit-background-size: cover;
+    	background-size: cover;
+}
+
+a {
+	color: #e60073;
+	text-decoration: none;
+}
+
+p {
+	font-size: 130%;
+	line-height: 1.4;
+	color: #0d0d0d
+}
+main {
+	width: 75%;
+	padding-left: 80px;
+}
+#obit {
+	padding: 0px 10px 0px 10px;
+	background-color: rgba(230,230,230, 0.3) ;
+}
+
+h1 {
+	color: #222;
+	opacity: 0.6;
+	font: 800 340% 'Bitter';
+	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+	margin-top: 0px;
+
+/*	font-size: 260%;
+	margin-top: 2px;
+	margin-bottom: 35px;
+	font-weight: bold;
+	font-family: "Georgia";
+	text-shadow: 1.75px 1.75px #ff3399*/
+}
+
+h4 {
+	font-family:"Brush Script MT", cursive;
+	font-size: 192%;
+	color: #ff66b3;
+	font-weight: bold;
+	margin-bottom: -6px;
+	font-style: none;
+}
+
+#sidebarText {
+	padding: 10px 80px 15px 50px;
+	/*	margin-top: 5px;*/
+	/*	background-color: #ff3399;*/
+	background-color: #e60073;
+	opacity: .6;
+	color: #ffcceb;
+	/*	color: #ffbae4;*/
+}
+	#sidebarText a {
+		color: #ffcceb;
+		/*	color: #ffbae4;*/
+		font-size: 122%;
+	}
+	#sidebarText a:hover {
+		color:white;
+	}
+	#sidebarText p {
+		margin-bottom: 5px;
+	}
+
+.sideLink {
+	border-bottom-style: solid;
+}
+	.sideLink:last-child {
+		border-bottom-style:none;
+	}
+
+.smallLink {
+	font-size: 80%
+}
+
+
+
+/* Responsive Grid from http://www.responsivegridsystem.com/*/
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74.6%;
+}
+.span_2_of_4 {
+	width: 49.2%;
+}
+.span_1_of_4 {
+	width: 23.8%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+}
+
+
+
+
+
+/*other resources:
+http://cssdeck.com/labs/embossed-text-effect/   font and styling for Christina's name
+https://css-tricks.com/perfect-full-page-background-image/
+https://scotch.io/tutorials/how-to-change-a-css-background-images-opacity
+
+ssh resource: http://www.computerhope.com/unix/scp.htm*/
